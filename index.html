@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>. : Challenge Encriptador de Texto: .</title>
+    </head>
+    <body>
+        <header>
+            <p><img src="img/alura.png">Encriptador de Texto<p>
+        </header>
+        <main>
+            <div id="texto">
+                <textarea id="text-encript" placeholder="Escribir texto a encriptar"></textarea>
+                <p class="m1"> 
+                    <img src="img/admiracion.png" class="img">
+                    Solo letras minúsculas y sin acentos.
+                </p>
+                <p>
+                    <input type="button" class="boton" name="boton-encriptar" value="Encriptar" onclick="validaTexto(1);">
+                    <input type="button" class="boton" name="boton-desencriptar" value="Desncriptar" onclick="validaTexto(2);">
+                </p>
+            </div>            
+            <div id="resul">
+                <div id="sin-texto">
+                    <img src="img/muñeco.png" class="mune">
+                    <p class="m2"> 
+                        Ningún mensaje fue encontrado.
+                    </p>
+                    <p class="m3">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                </div>
+                <div id="resulta">
+                    <textarea id="resultado"></textarea>
+                    <p>
+                    <button id="copiar" class="boton" onclick="copiarTexto();">copiar</button>
+                </div>    
+            </div>
+        </main>
+        <footer>
+            <p>Desarrollado por Gustavo Adolfo Romero Garcés &#169; 2024.</p>
+            <p>G6 Programa ORACLE ONE</p>
+            <p><img src="img/one.png" class="one"></p>
+            <p><a href="https://www.linkedin.com/in/gargash"><img src="img/linkedin.png" class="link">    
+                </a><a href="https://github.com/elgargash/encriptador.git">    <img src="img/github.png" class="link"></a>
+            </p>
+        </footer>
+        <script src="encriptador.js"></script>
+    </body>
+</html>
